@@ -9,6 +9,7 @@ import { User } from './../user';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit{
+  title = 'Listar Usuários'
   listUsers: User[] = [];
 
   constructor(private service: UserService) { };

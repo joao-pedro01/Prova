@@ -1,23 +1,22 @@
-<div class="mural" *ngIf="listUsers.length > 0, else semUsers">
-    <div *ngFor="let user of listUsers">
-      <table>
-          <tr>
-              <td>ID: </td>
-              <td>Nome: </td>
-              <td>UserName: </td>
-              <td>Email: </td>
-          </tr>
-          <tr>
-              <td>{{ user.id }}</td>
-              <td>{{ user.name }}</td>
-              <td>{{ user.username }}</td>
-              <td>{{ user.email }}</td>
-          </tr>
-      </table>
-    </div>
-  </div>
-  <ng-template #semUsers>
-    <div class="ff-inter sem-users">
-      <p>Ainda não há usuários cadastrados</p>
-    </div>
-  </ng-template>
+<h1>{{ title }}</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Usuário</th>
+        <th>Email</th>
+        <th>Telefone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of listUsers">
+        <td><strong>{{ user.id }}</strong></td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+    </tr>
+    </tbody>
+</table>

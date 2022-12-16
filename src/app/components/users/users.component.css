@@ -1,0 +1,35 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  height: 500px;
+  margin: auto;
+}
+
+thead {
+  background-color: rgb(153, 230, 249);
+  height: 60px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+h1 {
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+  }
